@@ -1,0 +1,134 @@
+function a()
+{
+    if(true)
+    {
+        let aa= 5;
+        console.log(aa);
+
+    }
+
+}
+a()
+
+/////
+
+
+
+
+let n = {
+
+    name:["kamal","hari"],
+    age:12,
+    address : {
+        city:"chennai"
+    },
+    number : function(){
+        console.log("hi")
+    },
+}
+
+n.number()
+
+
+/////////
+
+let student = new Object();
+
+student.name = function()
+{
+    console.log("hello");
+}
+
+
+
+
+student.name()
+
+//////Dom manipulation basics,callbacks,promises,asunc/await,spread and deconstructing operators , terinary ,arrow function 
+
+//a++ ; a=a+1; 
+
+let m=10;
+
+console.log(m--);
+
+//////
+
+let q = 4 | 3;
+console.log(q)
+
+/////
+
+let aq= 5;
+
+if(aq%5==0)
+{
+    console.log("hello");
+}else if(aq%3==0){
+    console.log("hi");
+    
+}
+else{
+    console.log("hi hello")
+}
+
+/////
+
+
+
+let apple = () =>
+    {
+        console.log("apple");
+    
+    }
+    apple()
+    
+    ///
+    
+    let orange = (a,b) => {
+    
+        var c=a+b;
+        return c;
+    }
+    
+    console.log(orange(1,2))
+
+
+
+    ////////call back
+
+function attendance(lunch)
+{
+    setTimeout(()=>{
+
+        console.log("attendance is over");
+
+        lunch(goingtohome);
+    })
+    
+}
+function lunch(goingtohome)
+{
+    setTimeout(()=>{
+
+        console.log("lunch is over");
+       // lunch(goingtohome);
+       goingtohome();
+
+      
+    })
+
+    
+}
+function goingtohome()
+{
+   setTimeout(()=>
+{
+    console.log("i am going to home")
+    console.log("day completed")
+})
+    
+}
+
+attendance(lunch);
+console.log("kin");
